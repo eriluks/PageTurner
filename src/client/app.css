@@ -1,0 +1,129 @@
+/* Main element styling*/
+body {
+  margin: auto;
+  font-family: 'PT Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'PT Sans', sans-serif;
+}
+
+footer {
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+
+#home{
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding-top: 10px;
+}
+
+#stickyImage{
+ position: -webkit-sticky; /* Safari */
+ position: sticky;
+ top: 0;
+}
+
+#stickyDrop{
+ position: -webkit-sticky; /* Safari */
+ position: sticky;
+ top: 0;
+}
+
+#NavBar{
+  border-top: 5px groove #00bca0;
+}
+
+/* Image hover stylig*/
+.card {
+  height: 100%;
+}
+
+#imageContainer {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  background-color: #008CBA;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.editButton {
+  left: 0%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.deleteButton {
+  left: 8%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.textShow {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  cursor: default;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Genre carousel styling*/
+#carousel_image{
+  background-color: transparent;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+}
+
+#imageContainer:hover .image {
+  opacity: 0.1;
+}
+
+#imageContainer:hover .middle {
+  opacity: 1;
+}
+#imageContainer:hover .textShow {
+  opacity: 1;
+}
+
+.slider-item-div {
+    background-color: white;
+    text-align: center;
+}
+
+.review{
+  font-size: 30px;
+}
+
+/* Empty category page*/
+.ErrorImage {
+ display: block;
+ margin-left: 35%;
+ margin-right: auto;
+ width: 30%;
+}
