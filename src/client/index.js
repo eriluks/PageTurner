@@ -13,7 +13,7 @@ ReactDOM.render(
       <div className="content has-text-centered">
         <p>
           <strong>PageTurner</strong> by Erika Volodko. The source code can be found on
-          <a href="https://github.com/eriluks/MoviePop"> GitHub</a>.
+          <a href="https://github.com/eriluks/PageTurner"> GitHub</a>.
         </p>
         <img src="../Images/book.png"></img>
       </div>
