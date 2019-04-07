@@ -14,7 +14,7 @@ const dbname = 'MyMongoDB'; // change to match your database name
 server.use(express.static('dist'));
 
 // URL to our DB - will be loaded from an env variable or will use local DB
-const mongo_uri = process.env.MONGODB_URL || 'mongodb+srv://main_user:userpassword@users-yl6x5.mongodb.net/test?retryWrites=true';
+const mongo_uri = process.env.MONGODB_URL;
 
 let db;
 
