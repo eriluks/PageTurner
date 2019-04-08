@@ -3,17 +3,18 @@ const MongoClient = require('mongodb').MongoClient;
 const ObjectID = require('mongodb').ObjectID;
 const bodyParser = require('body-parser');
 
-// import Mongoose and the User model
+// import Mongoose and the User model which is the Book
 const mongoose = require('mongoose');
 const User = require('./models/User');
 
 const server = express();
-const dbname = 'MyMongoDB'; // change to match your database name
+// Name of the database
+const dbname = 'MyMongoDB';
 
 // serve files from the dist directory
 server.use(express.static('dist'));
 
-// URL to our DB - will be loaded from an env variable or will use local DB
+// URL to the online database which is loaded from an env variable initiated in the console
 const mongo_uri = process.env.MONGODB_URL;
 
 let db;
@@ -32,7 +33,7 @@ server.use(bodyParser.json());
 
 // define the various endpoints
 
-// retrieve all user objects from DB
+// retrieve all book objects
 server.get('/api/users', (req, res) => {
   User.find({}, (err, result) => {
     if (err) throw err;
@@ -42,6 +43,7 @@ server.get('/api/users', (req, res) => {
   });
 });
 
+// Retrieve a book with a specific genre
 server.get('/api/:genre', (req, res) => {
   User.find({selectedGenre : req.params.genre }, (err, result) => {
     if (err) throw err;
@@ -51,7 +53,7 @@ server.get('/api/:genre', (req, res) => {
   });
 });
 
-// retrieve user with specific ID from DB
+// retrieve a book with specific ID
 server.get('/api/users/:id', (req, res) => {
   User.findOne({_id: new ObjectID(req.params.id) }, (err, result) => {
     if (err) throw err;
@@ -61,7 +63,7 @@ server.get('/api/users/:id', (req, res) => {
   });
 });
 
-// delete user with specific ID from DB
+// deletea book with a specific ID
 server.delete('/api/users', (req, res) => {
   User.deleteOne( {_id: new ObjectID(req.body.id) }, err => {
     if (err) return res.send(err);
@@ -71,9 +73,9 @@ server.delete('/api/users', (req, res) => {
   });
 });
 
-// create new user based on info supplied in request body
+// create new book based on info supplied in request body
 server.post('/api/users', (req, res) => {
-  // create a new user object using the Mongoose model and the data sent in the POST
+  // create a new book object using the Mongoose model and the data sent in the POST
   const user = new User(req.body);
   // save this object to the DB
   user.save((err, result) => {
@@ -84,13 +86,13 @@ server.post('/api/users', (req, res) => {
   });
 });
 
-// update user based on info supplied in request body
+// update the book based on info supplied in request body
 server.put('/api/users', (req, res) => {
-  // get the ID of the user to be updated
+  // get the ID of the book to be updated
   const id  = req.body._id;
   // remove the ID so as not to overwrite it when updating
   delete req.body._id;
-  // find a user matching this ID and update their details
+  // find a book matching this ID and update their details
   User.updateOne( {_id: new ObjectID(id) }, {$set: req.body}, (err, result) => {
     if (err) throw err;
 
