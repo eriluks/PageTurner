@@ -137,7 +137,7 @@ class BookList extends Component {
               <Link to={'/genre/Art'}>
                 <button id="carousel_image" className="column">
                   {/* Find the art button image*/}
-                  <img alt='likes' width="50" height="20" src="../Images/art.png"></img>
+                  <img alt='art' width="50" height="20" src="../Images/art.png"></img>
                   <p className="title is-6 has-text-white">Art</p>
                 </button>
               </Link>
@@ -147,7 +147,7 @@ class BookList extends Component {
               <Link to={'/genre/Biography'}>
                 <button id="carousel_image" className="column">
                   {/* Find the biography button image*/}
-                  <img alt='likes' width="50" height="20" src="../Images/biography.png"></img>
+                  <img alt='biography' width="50" height="20" src="../Images/biography.png"></img>
                   <p className="title is-6 has-text-white">Bio</p>
                 </button>
               </Link>
@@ -157,7 +157,7 @@ class BookList extends Component {
               <Link to={'/genre/Romance'}>
                 <button id="carousel_image" className="column">
                   {/* Find the romance button image*/}
-                  <img alt='likes' width="50" height="20" src="../Images/romance.png"></img>
+                  <img alt='romance' width="50" height="20" src="../Images/romance.png"></img>
                   <p className="title is-6 has-text-white">Romance</p>
                 </button>
               </Link>
@@ -167,7 +167,7 @@ class BookList extends Component {
               <Link to={'/genre/Childrens'}>
                 <button id="carousel_image" className="column">
                   {/* Find the childrens button image*/}
-                  <img alt='likes' width="50" height="20" src="../Images/child.png"></img>
+                  <img alt='children' width="50" height="20" src="../Images/child.png"></img>
                   <p className="title is-6 has-text-white">Children</p>
                 </button>
               </Link>
@@ -177,7 +177,7 @@ class BookList extends Component {
               <Link to={'/genre/Classics'}>
                 <button id="carousel_image" className="column">
                   {/* Find the classics button image*/}
-                  <img alt='likes' width="50" height="20" src="../Images/classics.png"></img>
+                  <img alt='classics' width="50" height="20" src="../Images/classics.png"></img>
                   <p className="title is-6 has-text-white">Classics</p>
                 </button>
               </Link>
@@ -187,7 +187,7 @@ class BookList extends Component {
               <Link to={'/genre/Comics'}>
                 <button id="carousel_image" className="column">
                   {/* Find the comics button image*/}
-                  <img alt='likes' width="50" height="20" src="../Images/comics.png"></img>
+                  <img alt='comics' width="50" height="20" src="../Images/comics.png"></img>
                   <p className="title is-6 has-text-white">Comics</p>
                 </button>
               </Link>
@@ -197,7 +197,7 @@ class BookList extends Component {
               <Link to={'/genre/Contemporary'}>
                 <button id="carousel_image" className="column">
                   {/* Find the contemporary button image*/}
-                  <img alt='likes' width="50" height="20" src="../Images/museum.png"></img>
+                  <img alt='contemporary' width="50" height="20" src="../Images/museum.png"></img>
                   <p className="title is-6 has-text-white">Contemporary</p>
                 </button>
               </Link>
@@ -207,7 +207,7 @@ class BookList extends Component {
               <Link to={'/genre/Cooking'}>
                 <button id="carousel_image" className="column">
                   {/* Find the cooking button image*/}
-                  <img alt='likes' width="50" height="20" src="../Images/cooking.png"></img>
+                  <img alt='cooking' width="50" height="20" src="../Images/cooking.png"></img>
                   <p className="title is-6 has-text-white">Cooking</p>
                 </button>
               </Link>
@@ -217,7 +217,7 @@ class BookList extends Component {
               <Link to={'/genre/Crime'}>
                 <button id="carousel_image" className="column">
                   {/* Find the crime button image*/}
-                  <img alt='likes' width="50" height="20" src="../Images/crime.png"></img>
+                  <img alt='crime' width="50" height="20" src="../Images/crime.png"></img>
                   <p className="title is-6 has-text-white">Crime</p>
                 </button>
               </Link>
@@ -227,7 +227,7 @@ class BookList extends Component {
               <Link to={'/genre/Fantasy'}>
                 <button id="carousel_image" className="column">
                   {/* Find the fantasy button image*/}
-                  <img alt='likes' width="50" height="20" src="../Images/fantasy.png"></img>
+                  <img alt='fantasy' width="50" height="20" src="../Images/fantasy.png"></img>
                   <p className="title is-6 has-text-white">Fantasy</p>
                 </button>
               </Link>
@@ -240,7 +240,7 @@ class BookList extends Component {
               <Link to={'/genre/Fiction'}>
                 <button id="carousel_image" className="column">
                   {/* Find the fiction button image*/}
-                  <img alt='likes' width="50" height="20" src="../Images/fiction.png"></img>
+                  <img alt='fiction' width="50" height="20" src="../Images/fiction.png"></img>
                   <p className="title is-6 has-text-white">Fiction</p>
                 </button>
               </Link>
@@ -250,7 +250,7 @@ class BookList extends Component {
               <Link to={'/genre/History'}>
                 <button id="carousel_image" className="column">
                   {/* Find the history button image*/}
-                  <img alt='likes' width="50" height="20" src="../Images/history.png"></img>
+                  <img alt='history' width="50" height="20" src="../Images/history.png"></img>
                   <p className="title is-6 has-text-white">History</p>
                 </button>
               </Link>
@@ -260,7 +260,7 @@ class BookList extends Component {
               <Link to={'/genre/Horror'}>
                 <button id="carousel_image" className="column">
                   {/* Find the horror button image*/}
-                  <img alt='likes' width="50" height="20" src="../Images/horror.png"></img>
+                  <img alt='horror' width="50" height="20" src="../Images/horror.png"></img>
                   <p className="title is-6 has-text-white">Horror</p>
                 </button>
               </Link>
@@ -270,7 +270,7 @@ class BookList extends Component {
               <Link to={'/genre/Comedy'}>
                 <button id="carousel_image" className="column">
                   {/* Find the comedy button image*/}
-                  <img alt='likes' width="50" height="20" src="../Images/comedy.png"></img>
+                  <img alt='comedy' width="50" height="20" src="../Images/comedy.png"></img>
                   <p className="title is-6 has-text-white">Comedy</p>
                 </button>
               </Link>
@@ -280,7 +280,7 @@ class BookList extends Component {
               <Link to={'/genre/Mystery'}>
                 <button id="carousel_image" className="column">
                   {/* Find the mystery button image*/}
-                  <img alt='likes' width="50" height="20" src="../Images/mystery.png"></img>
+                  <img alt='mystery' width="50" height="20" src="../Images/mystery.png"></img>
                   <p className="title is-6 has-text-white">Mystery</p>
                 </button>
               </Link>
@@ -290,7 +290,7 @@ class BookList extends Component {
               <Link to={'/genre/Nonfiction'}>
                 <button id="carousel_image" className="column">
                   {/* Find the nonfiction button image*/}
-                  <img alt='likes' width="50" height="20" src="../Images/nonfiction.png"></img>
+                  <img alt='nonfiction' width="50" height="20" src="../Images/nonfiction.png"></img>
                   <p className="title is-6 has-text-white">Non - fiction</p>
                 </button>
               </Link>
@@ -300,7 +300,7 @@ class BookList extends Component {
               <Link to={'/genre/Paranormal'}>
                 <button id="carousel_image" className="column">
                   {/* Find the paranormal button image*/}
-                  <img alt='likes' width="50" height="20" src="../Images/paranormal.png"></img>
+                  <img alt='paranormal' width="50" height="20" src="../Images/paranormal.png"></img>
                   <p className="title is-6 has-text-white">Para  normal</p>
                 </button>
               </Link>
@@ -310,7 +310,7 @@ class BookList extends Component {
               <Link to={'/genre/Science Fiction'}>
                 <button id="carousel_image" className="column">
                   {/* Find the science fiction button image*/}
-                  <img alt='likes' width="50" height="20" src="../Images/sciencefiction.png"></img>
+                  <img alt='sciene fiction' width="50" height="20" src="../Images/sciencefiction.png"></img>
                   <p className="title is-6 has-text-white">Science Fiction</p>
                 </button>
               </Link>
@@ -320,7 +320,7 @@ class BookList extends Component {
               <Link to={'/genre/Young Adult'}>
                 <button id="carousel_image" className="column">
                   {/* Find the young adult button image*/}
-                  <img alt='likes' width="50" height="20" src="../Images/youngadult.png"></img>
+                  <img alt='young adult' width="50" height="20" src="../Images/youngadult.png"></img>
                   <p className="title is-6 has-text-white">Young Adult</p>
                 </button>
               </Link>
@@ -330,7 +330,7 @@ class BookList extends Component {
               <Link to={'/genre/Travel'}>
                 <button id="carousel_image" className="column">
                   {/* Find the travel button image*/}
-                  <img alt='likes' width="50" height="20" src="../Images/travel.png"></img>
+                  <img alt='travel' width="50" height="20" src="../Images/travel.png"></img>
                   <p className="title is-6 has-text-white">Travel</p>
                 </button>
               </Link>
